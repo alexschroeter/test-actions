@@ -24,10 +24,10 @@ jobs:
           git config --global user.email docs@dummy.bot.com
     - name: Set release notes tag
       run: |
-          export RELEASE_TAG_VERSION=${{ github.event.release.tag_name }}
-          echo "RELEASE_TAG_VERSION=${RELEASE_TAG_VERSION:1}" >> $GITHUB_ENV
+          export RELEASE_TAG_VERSION="${{ github.event.release.tag_name }}"
+          echo RELEASE_TAG_VERSION="${RELEASE_TAG_VERSION:1}" >> $GITHUB_ENV
     - name: Build docs website
-      run: mike deploy ${RELEASE_TAG_VERSION} --push
+      run: "mike deploy ${RELEASE_TAG_VERSION} --push"
     - name: Deploy all docs to github-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
