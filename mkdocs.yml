@@ -7,6 +7,13 @@ repo_url: https://github.com/fast-microscopy/test-actions
 # edit_uri: edit/main/docs/
 # use_directory_urls: false
 
+plugins:
+  - mike:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+          python:
+            paths: [src]
 
 nav:
   - index.md
@@ -40,3 +47,8 @@ theme:
       toggle:
         icon: material/lightbulb
         name: "Switch to light mode"
+
+extra:
+  version:
+    provider: mike
+    
