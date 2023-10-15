@@ -51,4 +51,5 @@ theme:
 extra:
   version:
     provider: mike
+    default: main
     
