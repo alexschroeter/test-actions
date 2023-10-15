@@ -1,9 +1,9 @@
 site_name: test-actions
-site_url: https://fast-microscopy.github.io/test-actions
+site_url: https://fast-microscopy.github.io/test-actions/
 site_description: A toolbox for registering / fusing / stitching multi-view / multi-positioning image datasets in 2-3D.
 
 repo_name: test-actions
-repo_url: https://github.com/fast-microscopy/test-actions
+repo_url: https://github.com/fast-microscopy/test-actions/
 # edit_uri: edit/main/docs/
 # use_directory_urls: false
 
